@@ -30,9 +30,25 @@ En el contexto de DevSecOps, desplazar a la izquierda significa implementar prá
 - En cuanto a la escalabilidad, IaC permite automatizar la provisión de infraestructura, facilitando la gestión de recursos a gran escala. Herramientas como Kubernetes pueden integrarse con IaC para desplegar y escalar aplicaciones dinámicamente, optimizando el uso de recursos y reduciendo costos.
 
 ## 3)¿Cuál es la diferencia entre monitoreo y observabilidad? ¿Por qué es crucial la observabilidad en sistemas complejos?
+Monitereo consiste en recolectar, almacenar y visualizar métricas, estas métricas pueden ser latencia, uso del cpu, etc. Para esto se hace uso de herramientas como Prometheus y grafana. Por otro lado la observabilidad es un componente esencial de DevSecOps que consta de 3 pilares logging, trazabilidad y monitoreo que definimos antes. Por lo tanto monitoreo es parte de Observabilidad
 
 ## 4)¿Cómo puede la experiencia del desarrollador impactar el éxito de DevOps en una organización?
-
+La filosofía DevOps consiste en trabajar en equipo, por lo tanto la experiencia de un desarrollador puede ayudar a que el trabajo en equipo vaya en armonía y sepa como responder cuando inevitablemente se originan conflictos entre los equipos. Un desarrollador experimentado ya está familiarizado con las tecnologías y los problemas que pueden surgir mientras se usan, por lo tanto el puede lidiar y/o liderar contra esos problemas.
 ## 5)Describe cómo InnerSource puede ayudar a reducir silos dentro de una organización.
+InnerSource ayuda a reducir silos organizacionales al:
 
+Fomentar una cultura de colaboración abierta y transparente.
+Compartir conocimiento de manera transversal.
+Permitir la contribución de múltiples equipos a los mismos proyectos.
+Acelerar la innovación y mejorar la eficiencia organizacional.
+Apoyar la implementación de DevOps y metodologías ágiles.
 ## 6)¿Qué rol juega la ingeniería de plataformas en mejorar la eficiencia y la experiencia del desarrollador?
+La ingeniería de plataformas mejora la eficiencia y la experiencia del desarrollador al:
+
+Automatizar procesos repetitivos como CI/CD, pruebas y despliegues, liberando tiempo para tareas más valiosas.
+Optimizar la infraestructura mediante herramientas como infraestructura como código (IaC), asegurando entornos consistentes y rápidos.
+Facilitar la colaboración entre equipos al ofrecer plataformas comunes y herramientas unificadas.
+Proveer herramientas de desarrollo eficientes que mejoran la productividad con interfaces intuitivas y flujos ágiles.
+Permitir escalabilidad y resiliencia, adaptándose dinámicamente a las necesidades del negocio.
+Reducir el tiempo de entrega mediante procesos automatizados y rápidos, agilizando el ciclo de desarrollo.
+Fomentar la cultura DevOps, facilitando la colaboración continua entre desarrollo y operaciones.
