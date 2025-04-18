@@ -76,7 +76,7 @@ Usa el siguiente comando para empezar el rebase interactivo:
 #### 5. Visualización gráfica del historial:
 Usa el siguiente comando para ver una representación gráfica del historial de confirmaciones:
 
-![Uso del comando git log --graph](imagenes/git-log--graph.jpg)
+![Uso del comando git log --graph](imagenes/git-log--graph2.jpg)
 
 ## Ejercicio 3: Creación y gestión de ramas desde commits específicos
 **Objetivo:** Practicar la creación de ramas desde commits específicos y comprender cómo Git maneja las referencias históricas
@@ -84,7 +84,8 @@ Usa el siguiente comando para ver una representación gráfica del historial de 
 #### 1. Crear una nueva rama desde un commit específico:
 Usa el historial de commits ( git log --oneline) para identificar un commit antiguo desde el cual crear una nueva rama:
 
-![Uso del comando git log --oneline](imagenes/git-checkout.jpg)
+![Uso del comando git log --oneline](imagenes/git-log%20--oneline.jpg)
+
 Crea una nueva rama bugfix/rollback-featuredesde ese commit:
 
 ![Uso del comando git branch y checkout](imagenes/git-branch-checkout2.jpg)
