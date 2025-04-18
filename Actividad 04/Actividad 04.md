@@ -20,11 +20,11 @@ El uso de ramas es super útil porque me permite trabajar en nuevas característ
 #### 1. Crear una nueva rama para una característica:
 
 Crea una nueva rama llamada `feature/advanced-feature` desde la rama `main`:
-![Uso del comando git branch y git checkout](imagenes/git-branch-checkout.jpg.jpg)
+![Uso del comando git branch y git checkout](imagenes/git-branch-checkout.jpg)
 
 #### 2. Modificar archivos en la nueva rama:
 Edite el archivo main.pypara incluir una función adicional y agregue y confirme estos cambios en la rama feature/advanced-feature:
-![Uso del comando git add main.py](imagenes/git-add-mainpy.jpg.jpg)
+![Uso del comando git add main.py](imagenes/git-add-mainpy.jpg)
 
 #### 3. Simular un desarrollo paralelo en la rama principal:
 Cambia de nuevo a la rama main, edite el archivo main.pyde forma diferente (por ejemplo, cambie el mensaje del original impreso), y 
