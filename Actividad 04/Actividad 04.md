@@ -140,7 +140,7 @@ Usa GitHub o GitLab para crear un nuevo repositorio remoto y clonarlo localmente
 ![Uso del comando git clone](imagenes/git-clone.jpg)
 #### 2. Crear una nueva rama para desarrollo de una característica:
 En tu repositorio local, crea una nueva rama feature/team-feature:
-![Uso del comando git branch](imagenes/git-branch3.jpg)
+![Uso del comando git branch](imagenes/git-branch-checkout3.jpg)
 
 #### 3. Realizar cambios y enviar la rama al repositorio remoto:
 Realiza cambios en los archivos del proyecto y confirmalos:
