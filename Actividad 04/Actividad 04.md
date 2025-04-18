@@ -33,6 +33,7 @@ agregue y confirme estos cambios en la rama main:
 
 #### 4. Intentar fusionar la rama feature/advanced-feature en main:
 Fusiona la rama feature/advanced-featureen main:
+
 ![Uso del comando git merge](imagenes/git-merge.jpg)
 
 #### 5. Resolver el conflicto de fusión:
@@ -44,31 +45,37 @@ Después de resolver el conflicto, añade el archivo resuelto y completa la fusi
 
 #### 6. Eliminar la rama fusionada:
 Una vez que hayas fusionado con éxito y resuelto los conflictos, elimina la rama feature/advanced-feature:
+
 ![Uso del comando git branch -d](imagenes/git-branch-d.jpg)
 
 ## Ejercicio 2: Exploración y manipulación del historial de commits
 ### Instrucciones:
 #### 1. Ver el historial detallado de commits:
 Usa el comando git logpara explorar el historial de commits, pero esta vez con más detalle:
+
 ![Uso del comando git log -p](imagenes/git-log-p.jpg)
 
 #### 2. Filtrar commits por autor:
 
 Usa el siguiente comando para mostrar solo los commits realizados por un autor específico:
+
 ![Uso del comando git log --author](imagenes/git-log--author.jpg)
 
 #### 3. Revertir un compromiso:
 Imagina que el compromiso más reciente en main.pyno debería haberse hecho. Usa git revertpara revertir ese compromiso:
+
 ![Uso del comando git revert](imagenes/git-revert.jpg)
 
 #### 4. Rebase interactivo:
 Realiza una rebase interactiva para combinar varios commits en uno solo. Esto es útil para limpiar el historial de confirmaciones antes de una fusión.
 
 Usa el siguiente comando para empezar el rebase interactivo:
+
 ![Uso del comando git rebase](imagenes/git-rebase.jpg)
 
 #### 5. Visualización gráfica del historial:
 Usa el siguiente comando para ver una representación gráfica del historial de confirmaciones:
+
 ![Uso del comando git log --graph](imagenes/git-log--graph.jpg)
 
 ## Ejercicio 3: Creación y gestión de ramas desde commits específicos
@@ -76,24 +83,30 @@ Usa el siguiente comando para ver una representación gráfica del historial de 
 ### Instrucciones:
 #### 1. Crear una nueva rama desde un commit específico:
 Usa el historial de commits ( git log --oneline) para identificar un commit antiguo desde el cual crear una nueva rama:
+
 ![Uso del comando git log --oneline](imagenes/git-checkout.jpg)
 Crea una nueva rama bugfix/rollback-featuredesde ese commit:
+
 ![Uso del comando git branch y checkout](imagenes/git-branch-checkout2.jpg)
 
 #### 2. Modificar y confirmar cambios en la nueva rama:
 Realice algunas modificaciones en main.pyque simultáneamente una corrección de errores, agregue y confirme los cambios en la nueva rama:
+
 ![Uso del comando git add y git commit](imagenes/git-add-mainpy4.jpg)
 
 #### 3. Fusionar los cambios en la rama principal:
 Cambia de nuevo a la rama mainy fusiona la rama bugfix/rollback-feature:
+
 ![Uso del comando git merge](imagenes/git-merge2.jpg)
 
 #### 4. Explorar el historial después de la fusión:
 Usa git logy git log --graphpara ver cómo se ha integrado el commit en el historial:
+
 ![Uso del comando git log y git log --graph](imagenes/git-log--graph2.jpg)
 
 #### 5. Eliminar la rama corrección de errores/función de reversión:
 Una vez fusionados los cambios, elimina la rama bugfix/rollback-feature:
+
 ![Uso del comando git branch -d](imagenes/git-branch-d2.jpg)
 
 ## Ejercicio 4: Manipulación y restauración de commits con git reset y git restablecimiento
@@ -107,7 +120,9 @@ print('This change will be reset')
 Agregue y confirme los cambios:
 ![Uso del comando git add y git commit](imagenes/git-add-mainpy5.jpg)
 #### 2. Usar git reset para deshacer el commit:
+
 Deshaz el commit utilizando git resetpara volver al estado anterior:
+
 ![Uso del comando git reset](imagenes/git-reset.jpg)
 
 #### 3.Usar git recovery para deshacer cambios no confirmados:
@@ -146,5 +161,4 @@ Una vez aprobado, fusiona el PR en la rama main.
 #### 6.Eliminar la rama remota y local:
 Después de la fusión, elimine la rama tanto local como remotamente:
 ![Uso del comando git branch y git push](imagenes/git-delete.jpg)
-
 
