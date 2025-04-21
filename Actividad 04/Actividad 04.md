@@ -164,3 +164,30 @@ Una vez aprobado, fusiona el PR en la rama main.
 Después de la fusión, elimine la rama tanto local como remotamente:
 ![Uso del comando git branch y git push](imagenes/git-delete.jpg)
 
+## Ejercicio 6: Cherry-Picking y Git Stash
+**Objetivo:** Aprender a aplicar commits específicos a otra rama utilizando y git cherry-pickguardar temporalmente cambios no confirmados utilizando git stash.
+
+# Intrucciones 
+
+#### 1.Hacer cambios en main.py y confirmarlos:
+
+Realiza y confirma varios cambios en main.pyla rama main:
+
+![Uso del comando git echo y add](imagenes/git-add-mainpy6.jpg)
+
+#### 2. Cree una nueva rama y aplique el commit específico:
+Crea una nueva rama feature/cherry-picky aplica el compromiso específico:
+
+![Uso del comando git checkout y git cherry-pick](imagenes/git-commit-hash.jpg)
+
+#### 3. Guardar temporalmente cambios no confirmados:
+Realiza algunos cambios en main.pypero no los confirma, guarda temporalmente estos cambios utilizando git stash:
+![Uso del comando git echo y add](imagenes/git-stash.jpg)
+
+#### 4. Aplicar los cambios guardados:
+Realice otros cambios y confírmalos si es necesario, luego, recupera los cambios guardados anteriormente:
+![Uso del comando git stash pop](imagenes/git-stash-pop.jpg)
+
+#### 5. Revisar el historial y confirmar la correcta aplicación de los cambios:
+Usa git logpara revisar el historial de confirmaciones y verificar que todos los cambios se han aplicado correctamente.
+![Uso del comando git log](imagenes/git-log.jpg)
