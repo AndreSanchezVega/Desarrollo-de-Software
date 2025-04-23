@@ -80,4 +80,56 @@ El historial de tu repositorio mostrará un compromiso de fusión.
 
 ![Uso del comando git log --graph --oneline](imagenes/ejemplo2.2.jpg)
 
+## 3. Fusionar squash (git merge --squash)
+La fusión squash combina todos los cambios de una rama en un solo commit en la rama principal. Este método es útil cuando se quiere mantener limpio un historial de confirmaciones.
 
+#### Pasos prácticos:
+```bash
+# Crear un nuevo repositorio
+$ mkdir prueba-squash-merge
+$ cd prueba-squash-merge
+$ git init
+
+# Agregar un archivo inicial en la rama principal (main)
+$ echo "# Mi Proyecto" > README.md
+$ git add README.md
+$ git commit -m "Commit inicial en main"
+
+# Crear y cambiar a una nueva rama 'add-basic-files'
+$ git checkout -b add-basic-files
+
+# Hacer algunos cambios y comitearlos
+$ echo "# CÓMO CONTRIBUIR" >> CONTRIBUTING.md
+$ git add CONTRIBUTING.md
+$ git commit -m "Agregar CONTRIBUTING.md"
+
+$ echo "# LICENCIA" >> LICENSE.txt
+$ git add LICENSE.txt
+$ git commit -m "Agregar LICENSE.txt"
+```
+#### Pregunta:
+¿Cuál es tu estructura de commits?
+
+```bash
+# Cambiar de vuelta a la rama 'main' y realizar la fusión squash
+$ git checkout main
+$ git merge --squash add-basic-files
+```
+
+Los commits luego se aplastan y se convierten en un solo commit:
+
+Para completar la fusión squash, realiza un commit:
+
+```bash
+$ git add .
+$ git commit -m "Agregar documentación estándar del repositorio"
+$ git log --graph --oneline
+```
+
+Esto combinará todos los cambios de la rama add-multiple-features en un solo nuevo commit en la rama main.
+
+#### Resultado
+
+![Uso del comando git log --graph --oneline](imagenes/ejemplo3.1.jpg)
+
+![Uso del comando git log --graph --oneline](imagenes/ejemplo3.2.jpg)
